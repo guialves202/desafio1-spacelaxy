@@ -8,6 +8,6 @@ npm install
 Depois, basta trocar as variáveis de ambiente.
 Troque a variável process.env.SESSION_SECRET na configuração da sessão por qualquer palavra, por exemplo:
 ```
-secret: 'palavraqualquer';
+secret: 'palavraqualquer'
 ```
 e o link da conexão do MongoDB pelo link da sua conexão.
