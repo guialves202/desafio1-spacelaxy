@@ -1,0 +1,49 @@
+.main {
+    width: 50%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.main-h1 {
+    padding: 1rem 0;
+    font-size: 4rem;
+    color: #111;
+}
+
+.main-p-description {
+    font-size: 1.2rem;
+    color: #797979;
+}
+
+hr {
+    margin: 1.5rem 0;
+}
+
+.description {
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+    color: #333;
+}
+
+.home-btn {
+    background: #007bff;
+    border: none;
+    border-radius: 8px;
+    padding: .8rem;
+    margin-top: 1rem;
+}
+
+.home-btn a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    
+}
+
+.hello-user {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #999;
+}

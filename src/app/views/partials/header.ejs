@@ -1,0 +1,30 @@
+<!-- Se tiver um usuário logado muda a navbar e mostra o email dele -->
+<% if(session.authenticated) { %>
+
+    <header>
+        <h3>Spacelaxy</h3>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/user/logout">Sair</a></li>
+            </ul>
+        </nav>
+        <p><%= session.user.email %></p>
+    </header>
+
+<!-- Se não tiver usuário logado mostra a navbar normal -->
+<% } else { %>
+    
+    <header>
+        <h3>Spacelaxy</h3>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/user/login">Login</a></li>
+                <li><a href="/user/register">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<% } %>
+

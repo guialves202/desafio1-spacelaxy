@@ -1,0 +1,32 @@
+<!-- Template utilizado para renderizar todas as páginas da aplicação -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- Importa o css específico de cada página -->
+    <link rel="stylesheet" href="<%- cssPath -%>">
+
+    <title>Desafio Spacelaxy</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700&family=Quicksand:wght@300;400;500;600;700&family=Ubuntu&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Inclui o header -->
+    <%- include('../partials/header.ejs') -%>
+
+    <!-- Inclui as mensagens de sucesso ou erro -->
+    <%- include('../partials/msg.ejs') -%>
+
+    <!-- Inclui o conteúdo específico de cada página aqui -->
+    <%- include(content) -%>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!-- Conteúdo da página principal -->
+<div class="main">
+
+    <!-- Se tiver um usuário logado mostra o nome dele -->
+    <% if(session.user) { %>
+
+        <div class="hello-user">
+            <h1 class="main-h1">Hello <%= session.user.name %>!</h1>
+        </div>
+    
+    <!-- Se não renderiza a página normal -->
+    <% } else { %>
+        
+        <h1 class="main-h1">Bem vindo!</h1>
+
+        <p class="main-p-description">Esse site foi feito para realizar um desafio proposto pela Spacelaxy, que propõe criar um sistema para lidar com login e registro de usuários usando MongoDB</p>
+        <hr>
+        <p class="description">Você pode se registrar ou fazer login para ver as funionalidades agora mesmo, experimente:</p>
+
+        <button class="home-btn"><a href="/user/register">Experimente agora</a></button>
+
+    <% } %>
+
+    
+
+</div>

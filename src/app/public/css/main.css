@@ -1,0 +1,73 @@
+/* Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: rgb(243, 243, 243);
+}
+
+/* Header */
+header {
+    background-color: #333;
+    font-size: 1.5rem;
+    height: 100%;
+    padding: 0 2rem .3rem 2rem;
+    display: grid;
+    align-items: first baseline;
+    grid-template-columns: auto auto 10fr;
+    column-gap: 2rem;
+    text-align: right;
+}
+
+header h3 {
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+header p {
+    color: white;
+    font-weight: 100;
+    font-size: 1.2rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: initial;
+    align-items: center;
+    gap: .8rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #adadad;
+    padding: 5px 10px;
+    transition: color .3s ease;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+/* Mensagens de erro ou sucesso */
+.msg {
+    padding: 2vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.success {
+    background-color: #19875441;
+}
+
+.error {
+    background-color: #dc354662;
+}

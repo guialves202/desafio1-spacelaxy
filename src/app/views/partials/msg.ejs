@@ -1,0 +1,13 @@
+<!-- Se tiver uma mensagem de sucesso mostra ela -->
+<% if(success.length > 0) { %>
+    <div class="success msg">
+        <p><%= success %></p>
+    </div>
+
+<!-- Se tiver uma mensagem de erro mostra ela -->
+<% } else if(error.length > 0) { %>
+    <div class="error msg">
+        <p><%= error %></p>
+    </div>
+
+<% } %>
