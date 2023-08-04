@@ -11,3 +11,9 @@ Troque a variável process.env.SESSION_SECRET na configuração da sessão por q
 secret: 'palavraqualquer'
 ```
 e o link da conexão do MongoDB pelo link da sua conexão.
+
+
+Teste o site em produção:
+```
+https://desafio1-spacelaxy.onrender.com
+```
